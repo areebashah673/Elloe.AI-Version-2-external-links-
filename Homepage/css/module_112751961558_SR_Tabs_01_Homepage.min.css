@@ -1,0 +1,122 @@
+.fadeaway {
+    mask-image: linear-gradient(180deg, transparent, #fff 0 50%, transparent 82%);
+    overflow: hidden
+}
+
+.tab-row-1 {
+    align-items: end;
+    display: flex
+}
+
+@media only screen and (max-width:1200px) {
+    .tab-row-1 {
+        align-items: start;
+        flex-direction: column
+    }
+
+    .progress-container {
+        margin-bottom: 15px
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .fadeaway {
+        mask-image: linear-gradient(180deg, transparent, #fff 0 80%, transparent 92%)
+    }
+}
+
+.tab-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 640px
+}
+
+@media only screen and (min-width:700px) {
+    .tab-copy {
+        min-width: 575px
+    }
+}
+
+.tab-img-pr img {
+    border-radius: 10px
+}
+
+.tab-row-3 {
+    transform: translateX(-100px)
+}
+
+.tab-content>.active {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.moving-row {
+    position: relative;
+    transition: transform .5s ease-out
+}
+
+.row-img-container {
+    flex: 1 1 0;
+    max-height: 264px
+}
+
+.row-img-container>img {
+    border-radius: 8px
+}
+
+.progress-container {
+    background-color: #294153;
+    height: 5px;
+    width: 100%
+}
+
+.progress-bar {
+    background-color: #fff;
+    height: 5px;
+    width: 0
+}
+
+.tab-row-2,
+.tab-row-3 {
+    width: 130%
+}
+
+@media only screen and (max-width:700px) {
+    .row-img-container {
+        flex: 1 1 20%;
+        max-height: 264px
+    }
+
+    .tab-row-2,
+    .tab-row-3 {
+        width: 200%
+    }
+
+    #myTab {
+        align-items: start;
+        flex-direction: column
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.active>.tab-row-2 {
+    animation: fadeIn .3s ease-in-out .2s forwards;
+    opacity: 0
+}
+
+.active>.tab-row-3 {
+    animation: fadeIn .3s ease-in-out .4s forwards;
+    opacity: 0;
+    transform: translateX(-100px)
+}

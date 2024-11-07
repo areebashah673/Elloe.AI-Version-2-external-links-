@@ -1,0 +1,68 @@
+div#hero_col .content-wrapper .col-content h1 {
+    margin-bottom: 30px
+}
+
+.sr-multicol-media h2.heading {
+    margin-bottom: 35px
+}
+
+.sr-multicol-media .sr-spacer-bottom-50 h2.heading {
+    margin-bottom: 1.3125rem
+}
+
+body .servicemana-power-sec .card,
+body .servicemana-power-sec .cards .col-lg-4:first-child .card {
+    padding: 56px 45px 43px 42px !important
+}
+
+.squirro-offers-salespage .content-wrapper {
+    border: none !important;
+    max-width: 250px
+}
+
+.squirro-offers-salespage .content-wrapper img {
+    height: 65px;
+    width: 65px
+}
+
+.imageslider .slider-wrpper .slick-list .slider-slide img {
+    border-radius: 8px
+}
+
+.removepopup-from-img .plus {
+    display: none
+}
+
+.nohover-card .cards .col-lg-4 .card:hover {
+    border: 1px solid #fad6c4 !important
+}
+
+.knowledge-man-box-heading.custom-features .sr-card h6 {
+    font-size: 20px
+}
+
+.custom-benefits-slider .col-lg-4>div {
+    width: 100%
+}
+
+.removepopup-from-img.custom-gallery .col-md-6.num-1-images .col1 a {
+    cursor: unset
+}
+
+@media (max-width:991px) {
+    .squirro-offers-salespage .content-wrapper {
+        max-width: 100%
+    }
+}
+
+@media (max-width:767px) {
+
+    body .servicemana-power-sec .card,
+    body .servicemana-power-sec .cards .col-lg-4:first-child .card {
+        padding: 30px 20px !important
+    }
+
+    .squirro-offers-salespage .content-wrapper {
+        max-width: 100%
+    }
+}

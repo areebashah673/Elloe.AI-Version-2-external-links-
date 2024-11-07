@@ -1,0 +1,143 @@
+.opacity-element,
+.text-elements {
+    cursor: pointer;
+    transition: opacity .3s ease-in-out
+}
+
+.text-elements:hover {
+    opacity: 1
+}
+
+.opacity-element:hover,
+.text-elements:hover+.opacity-element {
+    opacity: .6
+}
+
+.wheel-container {
+    align-items: start;
+    display: flex;
+    gap: 5%;
+    justify-content: center
+}
+
+@media (max-width:1200px) {
+    .wheel-container {
+        flex-wrap: wrap
+    }
+}
+
+.wheel {
+    min-width: 45%
+}
+
+.wheel-copy-container {
+    color: #fff
+}
+
+.wheel-copy-header {
+    margin-bottom: 1rem
+}
+
+.accordion {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    width: 100%
+}
+
+.accordion-item {
+    align-self: stretch;
+    border-bottom: 1px solid #142f42;
+    color: #fff;
+    cursor: pointer;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 45px;
+    padding-top: 20px;
+    transition: height .3s ease
+}
+
+.accordion-item.active {
+    height: auto
+}
+
+.wheel-copy-header {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .15px;
+    line-height: 26.6px;
+    word-wrap: break-word;
+    color: #fff;
+    width: 484px
+}
+
+.wheel-copy-description {
+    color: hsla(0, 0%, 100%, .8);
+    font-weight: 400;
+    letter-spacing: .25px;
+    line-height: 21px;
+    word-wrap: break-word
+}
+
+.learn-more-button,
+.wheel-copy-description {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    margin-top: 8px
+}
+
+.learn-more-button {
+    align-items: start;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    justify-content: center;
+    letter-spacing: .46px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 5px 5px 5px 0
+}
+
+.icon-container {
+    height: 24px;
+    margin-left: 8px;
+    position: relative;
+    width: 24px
+}
+
+.active>.header-container>.icon-container>.accordion-icon {
+    transform: rotate(180deg);
+    transform-origin: center
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between
+}
+
+.spinPath {
+    animation: spin-p 10s linear infinite;
+    transform-origin: 50% 50%
+}
+
+@keyframes spin-p {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(-1turn)
+    }
+}
+
+#target-section svg,
+#target-section svg g,
+#target-section svg path {
+    fill: revert-layer !important
+}

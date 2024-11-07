@@ -1,0 +1,5 @@
+
+
+
+
+.logo-row-fader h4{color:#eee;margin:0;padding:18px}.slides-container{mask-image:linear-gradient(90deg,transparent,#fff 10% 90%,transparent);min-height:100px;overflow:hidden;position:relative;width:100%}.fader-slide-group{display:flex;min-width:1700px;position:relative;width:100%}.fader-img{align-items:center;animation:autoRun 100s linear Infinite;animation-delay:calc((100s/var(--quantity))*(var(--position) - 10));display:flex;height:100px;justify-content:center;left:100%;position:absolute;text-align:center;width:150px}.fader-img img{max-height:100%;max-width:100%;object-fit:contain}@keyframes autoRun{0%{left:100%}to{left:-150%}}.fader-img .text-center{margin-top:10px}@media (max-width:767px){.fader-slide-group{min-width:900px}.fader-img{width:75px}}

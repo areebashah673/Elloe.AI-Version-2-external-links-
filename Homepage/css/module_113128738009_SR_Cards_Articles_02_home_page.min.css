@@ -1,0 +1,126 @@
+.sr-cards-articles-02 .sr-border {
+    border: 0 solid #fad6c4 !important;
+    border-radius: 8px !important;
+    box-shadow: 15px 10px 20px 0 transparent;
+    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, .2);
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    padding: 0 !important;
+    position: relative;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease
+}
+
+.sr-cards-articles-02 .image-container {
+    background-image: linear-gradient(0deg, hsla(0, 0%, 100%, .95) 1%, transparent 19%);
+    border: none !important;
+    border-radius: 8px 8px 0 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0 0 90%;
+    position: relative
+}
+
+.sr-cards-articles-02 .image-container img {
+    height: 100%;
+    left: 50%;
+    min-height: inherit;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%
+}
+
+.sr-cards-articles-02 .has-placeholder:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.sr-cards-articles-02 .content-inner {
+    background-image: linear-gradient(0deg, #fff 50%, hsla(0, 0%, 100%, .95));
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 30px 16px;
+    position: relative
+}
+
+.sr-cards-articles-02 .topic-details {
+    background: #efefef;
+    border-radius: 4px;
+    color: #000 !important;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0 0 25px;
+    padding: .4rem 1rem;
+    width: fit-content
+}
+
+.sr-cards-articles-02 .post-name {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 0;
+    min-height: 40px
+}
+
+.sr-cards-articles-02 .author-details {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 25px
+}
+
+.sr-cards-articles-02 .cta-group {
+    justify-content: flex-start !important
+}
+
+.sr-cards-articles-02 .sr-border:hover {
+    border-color: #d34a20 !important;
+    box-shadow: 15px 10px 20px 0 rgba(0, 0, 0, .05)
+}
+
+.sr-cards-articles-02 .overlay-link * {
+    background: 0 0 !important;
+    border: none !important;
+    color: transparent !important;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%
+}
+
+.sr-cards-articles-02 .content-inner .btn-wrapper-sm .cta-button {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 26.767px !important
+}
+
+.docs-bg-img {
+    background-image: url("https://squirro.com/hubfs/Squirro%20Docs%20(1).jpg");
+    background-position: bottom;
+    background-size: cover
+}
+
+.res-bg-img {
+    background-image: url(https://squirro.com/hubfs/resources-bg-1.jpg);
+    background-size: contain
+}
+
+.sr-cards-articles-02 .cta-group>.btn-wrapper>.cta-button {
+    color: #ec6a2b
+}

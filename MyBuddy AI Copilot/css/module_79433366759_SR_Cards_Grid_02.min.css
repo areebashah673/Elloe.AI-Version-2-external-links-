@@ -1,0 +1,117 @@
+.sr-cards-grid-02 .cards.row [class*=col-] {
+    border: 10px solid transparent;
+    padding: 0
+}
+
+.sr-cards-grid-02 .card {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    border: 1px solid #b3dfff;
+    border-radius: 8px;
+    height: 100%;
+    justify-content: center;
+    padding: 30px 40px
+}
+
+.sr-cards-grid-02 .card:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0
+}
+
+.sr-cards-grid-02 .card-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    z-index: 1
+}
+
+.sr-cards-grid-02 .card-inner .cta-group {
+    margin-top: auto
+}
+
+.sr-cards-grid-02 .card {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.sr-cards-grid-02 .card-inner h6.heading {
+    font-size: 20px
+}
+
+.sr-cards-grid-02 .card.no-border,
+.sr-cards-grid-02 .card.no-border:hover {
+    border: none !important
+}
+
+.sr-cards-grid-02 .card.no-border .cardBoxHref {
+    height: 0;
+    width: 0
+}
+
+.sr-cards-grid-02 .card .cta-group {
+    justify-content: flex-start !important
+}
+
+.sr-cards-grid-02 .col-md-12 .heading {
+    margin-bottom: 0
+}
+
+.sr-cards-grid-02 .description {
+    margin-top: 20px
+}
+
+.sr-cards-grid-02 .description p {
+    font-size: 20px;
+    line-height: 1.3
+}
+
+.global_border .sr-cards-grid-02 .card {
+    border-radius: 8px !important;
+    color: inherit !important;
+    font-weight: 400 !important
+}
+
+.global_border .sr-cards-grid-02 .card:after {
+    content: none
+}
+
+.global_border .sr-cards-grid-02 .card .btn-none-wrapper .cta-button {
+    color: var(--primary) !important;
+    font-weight: 600 !important
+}
+
+.sr-cards-grid-02 .card {
+    position: relative
+}
+
+.sr-cards-grid-02 .cardBoxHref {
+    border: 0 !important;
+    height: 100%;
+    left: 0;
+    margin: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20
+}
+
+@media (max-width:768px) {
+
+    .sr-cards-grid-02 .description br,
+    .sr-cards-grid-02 .heading br {
+        display: none
+    }
+
+    .sr-cards-grid-02 .card {
+        padding: 30px
+    }
+}
